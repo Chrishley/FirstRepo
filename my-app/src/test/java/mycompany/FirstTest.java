@@ -11,19 +11,19 @@ import org.testng.annotations.Test;
 
 public class FirstTest {
 	WebDriver driver;
-	// ArrayList<String> data;
+	ArrayList<String> data;
 
 	@BeforeSuite
 	public void initiate() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "/Applications/chromedriver");
 		driver = new ChromeDriver();
-
+		Datadriven d = new Datadriven();
+		data = d.getdata("Test1");
 	}
 
 	@Test(priority = 0)
 	public void Login() throws InterruptedException, IOException {
-		Datadriven d = new Datadriven();
-		ArrayList<String> data = d.getdata("Test1");
+		
 		driver.get("https://www.gmail.com/");
 		driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys(data.get(1));
 		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/content/span")).click();
@@ -35,8 +35,7 @@ public class FirstTest {
 
 	@Test(priority = 1)
 	public void Composeemail() throws InterruptedException, IOException {
-		Datadriven d = new Datadriven();
-		ArrayList<String> data = d.getdata("Test1");
+	
 		// WebDriverWait wait = new WebDriverWait(driver, 40);
 		// WebElement element =
 		// wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@class='nM']/div/div/div)[1]")));

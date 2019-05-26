@@ -12,19 +12,19 @@ import org.testng.annotations.Test;
 public class SecondTest {
 
 	WebDriver driver;
-	// ArrayList<String> data;
+	ArrayList<String> data;
 
 	@BeforeSuite
 	public void initiate() throws IOException {
 		System.setProperty("webdriver.chrome.driver", "/Applications/chromedriver");
 		driver = new ChromeDriver();
-
+		Datadriven d = new Datadriven();
+		data = d.getdata("Test2");
 	}
 
 	@Test(priority = 0)
 	public void Login() throws InterruptedException, IOException {
-		Datadriven d = new Datadriven();
-		ArrayList<String> data = d.getdata("Test2");
+		
 		driver.get("https://www.gmail.com/");
 		driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys(data.get(1));
 		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/content/span")).click();
