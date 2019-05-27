@@ -37,7 +37,7 @@ public class ThirdTest {
 	@Test(priority = 1)
 	public void Composeemail() throws InterruptedException, IOException {
 		Datadriven d = new Datadriven();
-		ArrayList<String> data = d.getdata("Test2");
+		ArrayList<String> data = d.getdata("Test3");
 		// WebDriverWait wait = new WebDriverWait(driver, 40);
 		// WebElement element =
 		// wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@class='nM']/div/div/div)[1]")));

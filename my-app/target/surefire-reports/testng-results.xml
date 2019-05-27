@@ -1,43 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="30633" started-at="2019-05-26T21:32:59Z" finished-at="2019-05-26T21:33:30Z">
+  <suite name="Command line suite" duration-ms="45780" started-at="2019-05-27T00:35:21Z" finished-at="2019-05-27T00:36:06Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="30633" started-at="2019-05-26T21:32:59Z" finished-at="2019-05-26T21:33:30Z">
+    <test name="Command line test" duration-ms="45780" started-at="2019-05-27T00:35:21Z" finished-at="2019-05-27T00:36:06Z">
       <class name="mycompany.SecondTest">
-        <test-method status="PASS" signature="Login()[pri:0, instance:mycompany.SecondTest@3fb6a447]" name="Login" duration-ms="4803" started-at="2019-05-26T21:33:04Z" finished-at="2019-05-26T21:33:09Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:mycompany.SecondTest@735f7ae5]" name="Login" duration-ms="4816" started-at="2019-05-27T00:35:25Z" finished-at="2019-05-27T00:35:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Composeemail()[pri:1, instance:mycompany.SecondTest@3fb6a447]" name="Composeemail" duration-ms="10244" started-at="2019-05-26T21:33:19Z" finished-at="2019-05-26T21:33:30Z">
+        <test-method status="PASS" signature="Composeemail()[pri:1, instance:mycompany.SecondTest@735f7ae5]" name="Composeemail" duration-ms="10186" started-at="2019-05-27T00:35:46Z" finished-at="2019-05-27T00:35:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Composeemail -->
       </class> <!-- mycompany.SecondTest -->
-      <class name="mycompany.FirstTest">
-        <test-method status="PASS" signature="initiate()[pri:0, instance:mycompany.FirstTest@7a5d012c]" name="initiate" is-config="true" duration-ms="1439" started-at="2019-05-26T21:32:57Z" finished-at="2019-05-26T21:32:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiate -->
-        <test-method status="PASS" signature="initiate()[pri:0, instance:mycompany.SecondTest@3fb6a447]" name="initiate" is-config="true" duration-ms="790" started-at="2019-05-26T21:32:58Z" finished-at="2019-05-26T21:32:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiate -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:mycompany.FirstTest@7a5d012c]" name="Login" duration-ms="4989" started-at="2019-05-26T21:32:59Z" finished-at="2019-05-26T21:33:04Z">
+      <class name="mycompany.ThirdTest">
+        <test-method status="PASS" signature="Login()[pri:0, instance:mycompany.ThirdTest@180bc464]" name="Login" duration-ms="4804" started-at="2019-05-27T00:35:30Z" finished-at="2019-05-27T00:35:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Composeemail()[pri:1, instance:mycompany.FirstTest@7a5d012c]" name="Composeemail" duration-ms="10580" started-at="2019-05-26T21:33:09Z" finished-at="2019-05-26T21:33:19Z">
+        <test-method status="PASS" signature="Composeemail()[pri:1, instance:mycompany.ThirdTest@180bc464]" name="Composeemail" duration-ms="10189" started-at="2019-05-27T00:35:56Z" finished-at="2019-05-27T00:36:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Composeemail -->
-        <test-method status="PASS" signature="end()[pri:0, instance:mycompany.FirstTest@7a5d012c]" name="end" is-config="true" duration-ms="140" started-at="2019-05-26T21:33:30Z" finished-at="2019-05-26T21:33:30Z">
+      </class> <!-- mycompany.ThirdTest -->
+      <class name="mycompany.FirstTest">
+        <test-method status="PASS" signature="initiate()[pri:0, instance:mycompany.FirstTest@17550481]" name="initiate" is-config="true" duration-ms="1839" started-at="2019-05-27T00:35:17Z" finished-at="2019-05-27T00:35:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method status="PASS" signature="initiate()[pri:0, instance:mycompany.SecondTest@735f7ae5]" name="initiate" is-config="true" duration-ms="845" started-at="2019-05-27T00:35:19Z" finished-at="2019-05-27T00:35:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method status="PASS" signature="initiate()[pri:0, instance:mycompany.ThirdTest@180bc464]" name="initiate" is-config="true" duration-ms="821" started-at="2019-05-27T00:35:20Z" finished-at="2019-05-27T00:35:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:mycompany.FirstTest@17550481]" name="Login" duration-ms="4547" started-at="2019-05-27T00:35:21Z" finished-at="2019-05-27T00:35:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Composeemail()[pri:1, instance:mycompany.FirstTest@17550481]" name="Composeemail" duration-ms="11220" started-at="2019-05-27T00:35:35Z" finished-at="2019-05-27T00:35:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Composeemail -->
+        <test-method status="PASS" signature="end()[pri:0, instance:mycompany.FirstTest@17550481]" name="end" is-config="true" duration-ms="134" started-at="2019-05-27T00:36:06Z" finished-at="2019-05-27T00:36:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-        <test-method status="PASS" signature="end()[pri:0, instance:mycompany.SecondTest@3fb6a447]" name="end" is-config="true" duration-ms="137" started-at="2019-05-26T21:33:30Z" finished-at="2019-05-26T21:33:30Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:mycompany.SecondTest@735f7ae5]" name="end" is-config="true" duration-ms="131" started-at="2019-05-27T00:36:06Z" finished-at="2019-05-27T00:36:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="end()[pri:0, instance:mycompany.ThirdTest@180bc464]" name="end" is-config="true" duration-ms="145" started-at="2019-05-27T00:36:07Z" finished-at="2019-05-27T00:36:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
