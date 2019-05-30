@@ -10,20 +10,6 @@
           <include name="initiate"/>
         </methods>
       </class> <!-- mycompany.FirstTest -->
-      <class name="mycompany.ThirdTest">
-        <methods>
-          <include name="Composeemail"/>
-          <include name="initiate"/>
-          <include name="end"/>
-        </methods>
-      </class> <!-- mycompany.ThirdTest -->
-      <class name="mycompany.SecondTest">
-        <methods>
-          <include name="Composeemail"/>
-          <include name="initiate"/>
-          <include name="end"/>
-        </methods>
-      </class> <!-- mycompany.SecondTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->
