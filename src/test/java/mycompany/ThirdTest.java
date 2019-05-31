@@ -44,7 +44,7 @@ public class ThirdTest {
 		// WebElement element =
 		// wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@class='nM']/div/div/div)[1]")));
 		// element.click();
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 		driver.findElement(By.xpath("(//div[@class='nM']/div/div/div)[1]")).click();
 		driver.findElement(By.xpath("//*[@role=\"combobox\"]")).sendKeys(data.get(3));
 		driver.findElement(By.name("subjectbox")).sendKeys("Test email by Selenium");
