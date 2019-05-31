@@ -1,4 +1,4 @@
-package mycompany;
+package test.java.mycompany;
 
 import java.io.FileInputStream;
 import java.io.IOException;

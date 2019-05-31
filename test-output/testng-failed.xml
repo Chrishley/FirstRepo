@@ -3,13 +3,29 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mycompany.FirstTest">
+      <class name="test.java.mycompany.ThirdTest">
         <methods>
-          <include name="Composeemail"/>
+          <include name="Login"/>
           <include name="end"/>
+          <include name="Composeemail"/>
           <include name="initiate"/>
         </methods>
-      </class> <!-- mycompany.FirstTest -->
+      </class> <!-- test.java.mycompany.ThirdTest -->
+      <class name="test.java.mycompany.SecondTest">
+        <methods>
+          <include name="Composeemail"/>
+          <include name="initiate"/>
+          <include name="end"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- test.java.mycompany.SecondTest -->
+      <class name="test.java.mycompany.FirstTest">
+        <methods>
+          <include name="initiate"/>
+          <include name="end"/>
+          <include name="Composeemail"/>
+        </methods>
+      </class> <!-- test.java.mycompany.FirstTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
