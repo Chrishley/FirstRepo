@@ -26,7 +26,7 @@ public class FirstTest {
 
 	@Test(priority = 0)
 	public void Login() throws InterruptedException, IOException {
-		
+
 		driver.get("https://www.gmail.com/");
 		driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys(data.get(1));
 		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/content/span")).click();
@@ -38,14 +38,14 @@ public class FirstTest {
 
 	@Test(priority = 1)
 	public void Composeemail() throws InterruptedException, IOException {
-	
+
 		// WebDriverWait wait = new WebDriverWait(driver, 40);
 		// WebElement element =
 		// wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@class='nM']/div/div/div)[1]")));
 		// element.click();
-		Thread.sleep(10000);
+		Thread.sleep(6000);
 		driver.findElement(By.xpath("(//div[@class='nM']/div/div/div)[1]")).click();
-		driver.findElement(By.xpath("(((//form)[5]/div/div)[1]")).sendKeys(data.get(3));
+		driver.findElement(By.xpath("//textarea[contains(@role,'combobox')]")).sendKeys(data.get(3));
 		driver.findElement(By.name("subjectbox")).sendKeys("Test email by Selenium");
 		driver.findElement(By.xpath("//*[@ g_editable=\"true\"]")).sendKeys(data.get(4));
 		driver.findElement(By.xpath("//tr[@class='btC']/td/div/div/div[contains(@aria-label,'Send ‪(⌘Enter)‬')]"))
@@ -55,7 +55,7 @@ public class FirstTest {
 
 	@AfterSuite
 	public void end() {
-		driver.quit();
+		 driver.quit();
 
 	}
 
