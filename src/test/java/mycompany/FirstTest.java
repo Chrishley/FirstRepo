@@ -5,7 +5,9 @@ import java.util.ArrayList;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -29,10 +31,16 @@ public class FirstTest {
 
 		driver.get("https://www.gmail.com/");
 		driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys(data.get(1));
-		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/content/span")).click();
+		WebDriverWait wait = new WebDriverWait (driver,3);
+		WebElement next = driver.findElement(By.xpath("//*[@id=\"identifierNext\"]"));
+		next.click();
+		//driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div[2]")).click();
+		/*WebElement element = driver.findElement(By.xpath("(//div[@id='identifierNext']/div)[2]"));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).click().build().perform();*/
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input")).sendKeys(data.get(2));
-		driver.findElement(By.xpath("//*[@id=\"passwordNext\"]/content/span")).click();
+		driver.findElement(By.xpath("//*[@id=\"passwordNext\"]")).click();
 
 	}
 
