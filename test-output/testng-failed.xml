@@ -6,6 +6,7 @@
       <class name="mycompany.FirstTest">
         <methods>
           <include name="Composeemail"/>
+          <include name="Login"/>
           <include name="end"/>
           <include name="initiate"/>
         </methods>
